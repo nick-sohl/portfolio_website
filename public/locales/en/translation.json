@@ -1,0 +1,204 @@
+{
+    "navbar": {
+        "projects": "Projects",
+        "about": "About me",
+        "contact": "Contact me"
+    },
+    "hero": {
+        "headline": "Let's take off together!",
+        "subline": "Welcome to my portfolio."
+    },
+    "notperfect": {
+        "headline": "You are looking for me?",
+        "subline": "I'm looking for you too!"
+    },
+    "list": {
+        "title": {
+            "title_accent":  "Why I am looking for you",
+            "title_secondary": "Why you are looking for me"
+        },
+        "keyPoints": {
+            "keyPoints_accent": {
+                "p1": "further education",
+                "p2": "develop",
+                "p3": "utilise potential",
+                "p4": "professional environment",
+                "p5": "new challenges"
+            },
+            "keyPoints_secondary": {
+                "p1": "versatile skills",
+                "p2": "great potential",
+                "p3": "new perspectives",
+                "p4": "agency experience",
+                "p5": "ambitious and motivated"
+            }
+        }
+    },
+    "roadmap": {
+        "title": "My path to the digital.",
+        "text": "It all started with HTML 5 banners and a QR code generator. Since then, I've tried out a lot and learned a lot. Especially with YouTube tutorials, free code camp, practical work, Stackoverflow, Google and ChatGPT I was able to acquire a solid knowledge in the digital field. Below you can find some of the projects I created along the way."
+    },
+    "projects": {
+        "title": "My Projects.",
+        "text": "Through practical work, I was able to acquire basic knowledge in the field of web development. They show my passion for developing applications as well as further developing my skills.",
+        "github": "All projects on GitHub",
+        "table": {
+            "p1": "Webpage",
+            "p2": "Weather app",
+            "p3": "E-Commerce Shop",
+            "p4": "Restaurant menu",
+            "p5": "To-Do List",
+            "p6": "AJAX"
+        }
+    },
+    "about_me": {
+        "title": "Hi, I'm Nick!",
+        "text": "Ambitious, dedicated, interested and motivated to finally develop myself in the field I have put my hard work, dedication, heart, curiosity, skills and energy into. I am looking for a new challenge to develop and promote my self-taught skills in a professional environment. Unfortunately, I am not able to utilise this potential in my current agency, so I am looking for you!",
+        "button": "Resume"
+    },
+    "contact": {
+        "title": "Contact me",
+        "form": {
+            "first_name": "First name",
+            "last_name": "Last name",
+            "company": "Company",
+            "email": "Email",
+            "phone": "Phone number",
+            "message": "Message"
+        },
+        "button": "Let's talk"
+    },
+    "resume": {
+        "intro": {
+            "title": "Hey, nice to meet you!",
+            "text": "Inspired by the possibilities that web development offers, I immediately realised after my apprenticeship that I didn't just want to work in print production. So I started self-studying to acquire the necessary skills. In order to be able to use them, I am looking for a company that will support me with its know-how and give me the opportunity to develop myself further.",
+            "text_2": "Find out more about me, my education, qualifications and professional activities here. I look forward to meeting you in person!",
+            "button": "Find out more"
+        },
+        "module": {
+            "title": "Infos about me.",
+            "table": {
+                "name": {
+                    "title": "Name",
+                    "info": "Nick Sohl"
+                },
+                "apply_for": {
+                    "title": "Apply as",
+                    "info": "Frontend Developer"
+                },
+                "contact": {
+                    "title": "Contact"
+                },
+                "about": {
+                    "title": "About me",
+                    "info": "I am 23 years old, have completed an apprenticeship as a Premedia Specialist and work as a print production manager at Havas Switzerland. Last year I was able to work for Havas Spain in Barcelona for 2 months and learn Spanish fluently during this time. Through self-study, I have acquired a basic knowledge of web development - especially HTML, CSS, Tailwind CSS, JavaScript as well as React - with several courses and would now like to continue my professional education in this area. Now I'm ready for the next stage and would be happy to meet you in person."
+                },
+                "attachments": {
+                    "title": "Attachments",
+                    "info_1": "Resume_DE.pdf",
+                    "info_2": "Resume_EN.pdf",
+                    "info_3": "Reference.pdf"
+                }
+            }
+        },
+        "info": {
+            "residence": {
+                "subtitle": "Residence",
+                "title": "Zurich"
+            },
+            "birthdate": {
+                "subtitle": "Birthdate",
+                "title": "9 March 2000"
+            },
+            "nationality": {
+                "subtitle": "Nationality",
+                "title": "German"
+            },
+            "birthplace": {
+                "subtitle": "Birthplace",
+                "title": "Landau, GER"
+            }
+        },
+        "experience": {
+            "title": "Experience",
+            "box_1": {
+                "box_title": "Havas Switzerland",
+                "list": {
+                    "p_1": "Creating and designing multi-format web banners with Figma and Photoshop",
+                    "p_2": "Layouting small and medium commercial work with the Adobe Creative Suite",
+                    "p_3": "Editing and optimising images with Adobe Photoshop",
+                    "p_4": "Creating, editing and optimising graphics in Adobe Illustrator",
+                    "p_5": "Print data creation and control according to PDFX-ready workflow",
+                    "p_6": "Developing, implementing and monitoring media projects",
+                    "p_7": "Final artwork and preparation of media products for production",
+                    "p_8": "Direct contact with printers for the development and production of media projects",
+                    "p_9": "Product photography",
+                    "p_10": "Automation and personalisation of media products",
+                    "p_11": "Checking texts for typographical correctness and comprehensibility"
+                }
+            },
+            "box_2": {
+                "box_title": "Brandkitchen",
+                "list": {
+                    "p_1": "Creating multi-page periodicals in German and French",
+                    "p_2": "Training in the photo studio as well as product photography",
+                    "p_3": "Hardwear applications with digital printer, digital proof system, etc.",
+                    "p_4": "Layout of small and medium commercial work with the Adobe Creative Suite",
+                    "p_5": "Editing and optimising images with Adobe Photoshop",
+                    "p_6": "Creating, editing and optimising graphics in Adobe Illustrator",
+                    "p_7": "Print data creation and control according to PDFX-ready workflow"
+                }
+            }
+        },
+        "work": {
+            "title": "Work as a Premedia Specialist",
+            "box_title": "Projects"
+        },
+        "education": {
+            "title": "Education",
+            "box_1": {
+                "box_title": "Apprenticeship",
+                "list": {
+                    "p_1": "Premedia Specialist FVC, School of Design, Aarau"
+                }
+            },
+            "box_2": {
+                "box_title": "School education",
+                "list": {
+                    "p_1": "10th school year, Profil. Winterthur",
+                    "p_2": "Secondary school Hatzenbühl, Nürensdorf",
+                    "p_3": "IGS Rülzheim, Deutschland",
+                    "p_4": "Primary school Bellheim, Deutschland"
+                }
+            }
+        },
+        "languages": {
+            "title": "Languages",
+            "german": {
+                "subtitle": "Mother tongue",
+                "language": "German"
+            },
+            "english": {
+                "subtitle": "Allrounder",
+                "language": "English"
+            },
+            "spanish": {
+                "subtitle": "Favourite language",
+                "language": "Spanish"
+            },
+            "swiss_german": {
+                "subtitle": "Almost mother tongue",
+                "language": "Swiss German"
+            }
+        },
+        "hobbys": {
+            "title": "Hobbys",
+            "hobby_1": "Snowboarding",
+            "hobby_2": "Street photography",
+            "hobby_3": "Travelling",
+            "hobby_4": "Documentaries",
+            "hobby_5": "Webdevelopment",
+            "hobby_6": "Spikeball"
+        }
+    }
+}

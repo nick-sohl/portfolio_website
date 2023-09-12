@@ -1,0 +1,204 @@
+{
+    "navbar": {
+        "projects": "Projekte",
+        "about": "Über mich",
+        "contact": "Schreibt mir"
+    },
+    "hero": {
+        "headline": "Lasst uns gemeinsam durchstarten!",
+        "subline": "Willkommen zu meinem Portfolio."
+    },
+    "notperfect": {
+        "headline": "Ihr sucht mich?",
+        "subline": "Ich euch auch!"
+    },
+    "list": {
+        "title": {
+            "title_accent":  "Warum ich euch suche",
+            "title_secondary": "Warum ihr mich sucht"
+        },
+        "keyPoints": {
+            "keyPoints_accent": {
+                "p1": "Weiterbildung",
+                "p2": "weiterentwickeln",
+                "p3": "Potenzial nutzen",
+                "p4": "professionelles Umfeld",
+                "p5": "neue Herausforderungen"
+            },
+            "keyPoints_secondary": {
+                "p1": "vielseitige Fähigkeiten",
+                "p2": "grosses Potenzial",
+                "p3": "neue Perspektiven",
+                "p4": "Agenturerfahrung",
+                "p5": "ehrgeizig und motiviert"
+            }
+        }
+    },
+    "roadmap": {
+        "title": "Mein Weg ins Digitale.",
+        "text": "Mit HTML-5-Bannern und einem QR-Code-Generator hat alles angefangen. Seit dem habe ich viel ausprobiert und dazugelernt. Vor allem mit YouTube-Tutorials, Free-Code-Camp, praktischen Arbeiten, Stackoverflow, Google und ChatGPT konnte ich mir ein solides Wissen im digitalen Bereich aneignen. Weiter unten findet ihr einige Projekte, welche ich auf meinem Weg erstellt habe."
+    },
+    "projects": {
+        "title": "Meine Projekte.",
+        "text": "Durch praktischen Arbeiten konnte ich mir grundlegendes Wissen im Bereich Webdevelopment aneignen. Sie zeigen meine Leidenschaft für das Entwickeln von Applikationen sowie die Weiterentwicklung meiner Fähigkeiten.",
+        "github": "Alle Projekte auf GitHub",
+        "table": {
+            "p1": "Webpage",
+            "p2": "Wetter App",
+            "p3": "E-Commerce Shop",
+            "p4": "Restaurant-Menu",
+            "p5": "To-Do List",
+            "p6": "AJAX"
+        }
+    },
+    "about_me": {
+        "title": "Hi, ich bin Nick.",
+        "text": "Ich bin ehrgeizig, engagiert, interessiert und motiviert mich endlich in dem Bereich weiter zu entwickeln in welchem ich Fleiss, Engagement, Herzblut, Neugier, Können und Energie hineingesteckt habe. Ich suche eine neue Herausforderung, um meine selbsterlernten Fähigkeiten in einem profesionellen Umfeld auszubauen und zu fördern. Da ich dieses Potenzial in meiner jetzigen Agentur leider nicht ausnutzen kann, suche ich nach euch!",
+        "button": "Lebenslauf"
+    },
+    "contact": {
+        "title": "Schreibt mir",
+        "form": {
+            "first_name": "Vorname",
+            "last_name": "Nachname",
+            "company": "Unternehmen",
+            "email": "Email",
+            "phone": "Telefonnummer",
+            "message": "Nachricht"
+        },
+        "button": "Senden"
+    },
+    "resume": {
+        "intro": {
+            "title": "Hey, schön euch kennenzulernen!",
+            "text": "Begeistern von den Möglichkeiten welche die Webentwicklung bietet, habe ich nach meiner Ausbildung sofort gemerkt, dass ich nicht nur in der Printproduktion tätig sein möchten. So habe ich im Selbststudium damit angefangen, die dafür nötigen Fähigkeiten zu erwerben. Damit ich diese nutzen kann, suche ich ein Unternehmen, welches mich mit seinem Know-How unterstützt und mir die Möglichkeit gibt, mich weiterzuentwickeln.",
+            "text_2": "Erfahrt hier mehr über mich, meine Ausbildung und Qualifikationen sowie beruflichen Tätigkeiten. Ich freue mich schon euch persönlich kennenzulernen!",
+            "button": "Erfahre mehr"
+        },
+        "module": {
+            "title": "Infos über mich.",
+            "table": {
+                "name": {
+                    "title": "Name",
+                    "info": "Nick Sohl"
+                },
+                "apply_for": {
+                    "title": "Bewerbung als",
+                    "info": "Frontend Developer"
+                },
+                "contact": {
+                    "title": "Kontakt"
+                },
+                "about": {
+                    "title": "Über mich",
+                    "info": "Ich bin 23 Jahre alt, habe eine Ausbildung als Polygraf absolviert und arbeite als Leiter der Printproduktion bei Havas Switzerland. Letztes Jahr konnte ich für 2 Monate bei Havas Spanien in Barcelona arbeiten und in dieser Zeit fliessend Spanisch lernen. Im Selbststudium habe ich mir mit mehreren Kursen ein Grundwissen in der Web-Entwicklung – vor allem HTML, CSS, Tailwind CSS, JavaScript sowie React – angeeignet und möchte mich nun in diesem Bereich professionell weiterbilden. Jetzt bin ich bereit für die nächste Etappe und würde mich freuen euch persönlich kennenzulernen."
+                },
+                "attachments": {
+                    "title": "Anhänge",
+                    "info_1": "Lebenslauf_DE.pdf",
+                    "info_2": "Lebenslauf_EN.pdf",
+                    "info_3": "Arbeitszeugnis.pdf"
+                }
+            }
+        },
+        "info": {
+            "residence": {
+                "subtitle": "Wohnort",
+                "title": "Zürich"
+            },
+            "birthdate": {
+                "subtitle": "Geburtsdatum",
+                "title": "9. März 2000"
+            },
+            "nationality": {
+                "subtitle": "Nationalität",
+                "title": "Deutsch"
+            },
+            "birthplace": {
+                "subtitle": "Geburtsort",
+                "title": "Landau, DE"
+            }
+        },
+        "experience": {
+            "title": "Erfahrung",
+            "box_1": {
+                "box_title": "Havas Switzerland",
+                "list": {
+                    "p_1": "Erstellen und Gestalten von mehrformatigen Webbannern mit Figma und Photoshop",
+                    "p_2": "Layouten kleiner und mittlerer Akzidenzarbeiten mit der Creative Suite",
+                    "p_3": "Bearbeitung und Optimierung von Bildern mit Adobe Photoshop",
+                    "p_4": "Erstellen, Bearbeiten und Optimieren von Grafiken in Adobe Illustrator",
+                    "p_5": "Druckdaten-Erstellung und -Kontrolle nach PDFX-ready-Workflow",
+                    "p_6": "Entwicklung, Umsetzung und Begleitung von Medienprojekten",
+                    "p_7": "Reinzeichnen und Vorbereiten von Medienprodukten für die Produktion",
+                    "p_8": "Direkter Kontakt mit Druckereien zur Entwicklung und Produktion von Medienprojekten",
+                    "p_9": "Produktfotografie",
+                    "p_10": "Automatisierung und Personalisierung von Medienprodukten",
+                    "p_11": "Prüfen von Texten auf typografische Korrektheit und Verständlichkeit"
+                }
+            },
+            "box_2": {
+                "box_title": "Brandkitchen",
+                "list": {
+                    "p_1": "Erstellen mehrseitigen Periodika in Deutsch und Französisch",
+                    "p_2": "Ausbildung im Fotostudio sowie Produktfotografie",
+                    "p_3": "Hardwearanwendungen mit Digitalprinter, Digital-Proof-System usw.",
+                    "p_4": "Layouten kleiner und mittlerer Akzidenzarbeiten mit der Creative Suite",
+                    "p_5": "Bearbeitung und Optimierung von Bildern mit Adobe Photoshop",
+                    "p_6": "Erstellen, Bearbeiten und Optimieren von Grafiken in Adobe Illustrator",
+                    "p_7": "Druckdaten-Erstellung und -Kontrolle nach PDFX-ready-Workflow"
+                }
+            }
+        },
+        "work": {
+            "title": "Arbeiten als Polygraf",
+            "box_title": "Projekte"
+        },
+        "education": {
+            "title": "Bildung",
+            "box_1": {
+                "box_title": "Ausbildung",
+                "list": {
+                    "p_1": "Polygraf EFZ, Schule für Gestaltung Aarau"
+                }
+            },
+            "box_2": {
+                "box_title": "Schulbildung",
+                "list": {
+                    "p_1": "10. Schuljahr, Profil. Winterthur",
+                    "p_2": "Sekundarschule Hatzenbühl, Nürensdorf",
+                    "p_3": "IGS Rülzheim, Deutschland",
+                    "p_4": "Grundschule Bellheim, Deutschland"
+                }
+            }
+        },
+        "languages": {
+            "title": "Sprachen",
+            "german": {
+                "subtitle": "Muttersprache",
+                "language": "Deutsch"
+            },
+            "english": {
+                "subtitle": "Allrounder",
+                "language": "Englisch"
+            },
+            "spanish": {
+                "subtitle": "Lieblingssprache",
+                "language": "Spanisch"
+            },
+            "swiss_german": {
+                "subtitle": "Fast Muttersprache",
+                "language": "Schwiizerdütsch"
+            }
+        },
+        "hobbys": {
+            "title": "Hobbys",
+            "hobby_1": "Snowboarden",
+            "hobby_2": "Street photography",
+            "hobby_3": "Reisen",
+            "hobby_4": "Dokumentationen",
+            "hobby_5": "Webdevelopment",
+            "hobby_6": "Spikeball"
+        }
+    }
+}
