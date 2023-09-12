@@ -47,5 +47,5 @@ This project is licensed under the MIT License
 
 Contact
 Feel free to contact me at nick.sohl@nicksohl.com
-Visit my portfolio website: [](https://nicksohl.com)
+Visit my portfolio website: https://nicksohl.com
 GitHub: nick_sohl
