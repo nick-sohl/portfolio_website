@@ -34,12 +34,12 @@ Welcome to my portfolio repository! This project showcases my web development sk
 
    ```shell
 
-Open your browser and navigate to http://localhost:3000
+Open your browser and navigate to http://localhost:5173
 
 ## License
 This project is licensed under the MIT License
 
 Contact
 Feel free to contact me at nick.sohl@nicksohl.com
-Visit my portfolio website: [](nicksohl.com)
+Visit my portfolio website: (nicksohl.com)
 GitHub: nick_sohl
