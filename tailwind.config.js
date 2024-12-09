@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+import typography from "@tailwindcss/typography";
+import forms from "@tailwindcss/forms";
+import daisyui from "daisyui";
+import aspectRatio from "@tailwindcss/aspect-ratio";
+import gradients from "tailwindcss-gradients";
+
 export default {
   content: [
     "./index.html",
@@ -7,29 +13,20 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '640px',
-        // => @media (min-width: 640px) { ... }
-
-        'md': '768px',
-        // => @media (min-width: 768px) { ... }
-
-        'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-
-        'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
-
-        '2xl': '1536px',
-        // => @media (min-width: 1536px) { ... }
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },
   plugins: [
-    require("@tailwindcss/typography"),
-    require('@tailwindcss/forms'),
-    require("daisyui"),
-    require('@tailwindcss/aspect-ratio'),
-    require('tailwindcss-gradients'),
+    typography,
+    forms,
+    daisyui,
+    aspectRatio,
+    gradients,
   ],
   daisyui: {
     themes: ["light", "dark"],
