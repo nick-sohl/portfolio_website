@@ -16,7 +16,7 @@ const Projects = ({theme}) => {
   const { t } = useTranslation()
 
   return (
-    <div id='projects' className='grid justify-center items-center bg-accent overflow-hidden relative border-b-[1px] border-base-content h-fit lg:h-screen'>
+    <div id='projects' className='grid justify-center items-center bg-accent relative border-b-[1px] border-base-content'>
 
       {/* BG Circles */}
       {/* <div className='mix-blend-multiply'>
