@@ -16,7 +16,10 @@ jobs:
 
       - name: Deploy to Raspberry Pi
         run: |
-          # Write the private SSH key to a file
+          # Ensure the SSH directory exists
+          mkdir -p ~/.ssh
+
+          # Write the private SSH key to the SSH directory
           echo "${{ secrets.RASPBERRY_PI_SECRET_KEY }}" > ~/.ssh/github_actions
           chmod 600 ~/.ssh/github_actions
 
