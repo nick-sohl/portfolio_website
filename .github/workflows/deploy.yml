@@ -13,16 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup SSH
-        run: |
-          # Add the private SSH key to the SSH agent
-          echo "${{ secrets.RASPBERRY_PI_SECRET_KEY }}" > ~/.ssh/github_actions
-          chmod 600 ~/.ssh/github_actions
-
-          # Add GitHub's SSH key to known hosts to avoid authenticity prompt
-          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-          ssh-keyscan -t rsa ${{ secrets.RASPI_HOST }} >> ~/.ssh/known_hosts
-
       - name: Deploy to Raspberry Pi
         env:
           PI_HOST: ${{ secrets.RASPI_HOST }}  # Raspberry Pi IP address as a secret
