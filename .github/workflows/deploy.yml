@@ -19,38 +19,46 @@ jobs:
           # Debugging: Show current user and environment
           echo "Current user: $(whoami)"
           echo "Home directory: $HOME"
-          ls -la $HOME
           echo "Environment Variables:"
           env
 
-      - name: Deploy to Raspberry Pi
-        run: |
           # Ensure the SSH directory exists
           mkdir -p ~/.ssh
-          echo "SSH directory created: $(ls -la ~/.ssh)"
+          echo "SSH directory contents:"
+          ls -la ~/.ssh
 
           # Write the private SSH key to the SSH directory
           echo "${{ secrets.RASPBERRY_PI_SECRET_KEY }}" > ~/.ssh/github_actions
           chmod 600 ~/.ssh/github_actions
-          echo "SSH key file created: $(ls -la ~/.ssh)"
+          echo "SSH key file created:"
+          ls -la ~/.ssh
 
           # Add the Raspberry Pi's host key to known hosts
-          ssh-keyscan -p 2222 ${{ secrets.RASPI_HOST }} >> ~/.ssh/known_hosts
-          echo "Known hosts updated: $(cat ~/.ssh/known_hosts)"
+          ssh-keyscan -v -p 2222 ${{ secrets.RASPI_HOST }} >> ~/.ssh/known_hosts
+          echo "Known hosts file contents:"
+          cat ~/.ssh/known_hosts
 
+      - name: Test SSH Connection
+        run: |
+          # Test SSH connection with verbose output
+          ssh -vvv -i ~/.ssh/github_actions -p 2222 pi@${{ secrets.RASPI_HOST }} exit
+
+      - name: Deploy to Raspberry Pi
+        run: |
           # SSH into Raspberry Pi and execute commands
-          ssh -v -i ~/.ssh/github_actions -p 2222 pi@${{ secrets.RASPI_HOST }} << EOF
-            cd /var/www/html/repos/portfolio_website || exit 1
-            git pull origin main || exit 1
+          ssh -i ~/.ssh/github_actions -p 2222 pi@${{ secrets.RASPI_HOST }} << EOF
+            set -e
+            cd /var/www/html/repos/portfolio_website
+            git pull origin main
 
             # Install dependencies and build the application
-            npm install || exit 1
-            npm run build || exit 1
+            npm install
+            npm run build
 
             # Move built files to the Nginx served directory
-            rm -rf /var/www/html/portfolio-website/* || exit 1
-            mv dist/* /var/www/html/portfolio-website/ || exit 1
+            rm -rf /var/www/html/portfolio-website/*
+            mv dist/* /var/www/html/portfolio-website/
 
             # Restart Nginx
-            sudo systemctl restart nginx || exit 1
+            sudo systemctl restart nginx
           EOF
