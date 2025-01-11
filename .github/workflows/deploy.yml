@@ -41,12 +41,12 @@ jobs:
       - name: Test SSH Connection
         run: |
           # Test SSH connection with verbose output
-          ssh -vvv -i ~/.ssh/github_actions -p 2222 pi@${{ secrets.RASPI_HOST }} exit
+          ssh -vvv -i ~/.ssh/github_actions -p 2222 pi@10.59.163.1 exit
 
       - name: Deploy to Raspberry Pi
         run: |
           # SSH into Raspberry Pi and execute commands
-          ssh -i ~/.ssh/github_actions -p 2222 pi@${{ secrets.RASPI_HOST }} << EOF
+          ssh -i ~/.ssh/github_actions -p 2222 pi@pi@10.59.163.1 << EOF
             set -e
             cd /var/www/html/repos/portfolio_website
             git pull origin main
