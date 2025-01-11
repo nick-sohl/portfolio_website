@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import App from './App.jsx'
 
 import NavbarProjects from './components/projects/NavbarProjects.jsx'
-import BottomNavigation from './components/bottomNavigation.jsx'
+import BottomNavigation from './components/BottomNavigation.jsx'
 import Footer from './components/Footer.jsx'
 
 import Error from './components/Error.jsx'
