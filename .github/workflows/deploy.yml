@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: RASPBERRY_PI_HOST  # Specify the environment here
+    environment: RASPBERRY_PI_HOST
 
     steps:
       - name: Checkout Repository
@@ -16,9 +16,16 @@ jobs:
 
       - name: Deploy to Raspberry Pi
         run: |
-          # SSH into Raspberry Pi and execute the deployment commands
-          ssh -i <(echo "${{ secrets.RASPBERRY_PI_SECRET_KEY }}") -p 2222 pi@${{secrets.RASPI_HOST}} << EOF
-            cd $REPO_PATH
+          # Write the private SSH key to a file
+          echo "${{ secrets.RASPBERRY_PI_SECRET_KEY }}" > ~/.ssh/github_actions
+          chmod 600 ~/.ssh/github_actions
+
+          # Add the Raspberry Pi's host key to known hosts
+          ssh-keyscan -p 2222 ${{ secrets.RASPI_HOST }} >> ~/.ssh/known_hosts
+
+          # SSH into Raspberry Pi and execute commands
+          ssh -i ~/.ssh/github_actions -p 2222 pi@${{ secrets.RASPI_HOST }} << EOF
+            cd /var/www/html/repos/portfolio_website
             git pull origin main
 
             # Install dependencies and build the application
@@ -26,9 +33,9 @@ jobs:
             npm run build
 
             # Move built files to the Nginx served directory
-            rm -rf $NGINX_PATH/*
-            mv dist/* $NGINX_PATH/
+            rm -rf /var/www/html/portfolio-website/*
+            mv dist/* /var/www/html/portfolio-website/
 
-            # Restart Nginx to serve the updated files (if necessary)
+            # Restart Nginx
             sudo systemctl restart nginx
           EOF
