@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: RASPBERRY_PI_HOST
+    # environment: RASPBERRY_PI_HOST
 
     steps:
       - name: Checkout Repository
@@ -21,17 +21,17 @@ jobs:
           chmod 700 /home/runner/.ssh
 
           # Write the private SSH key to the SSH directory
-          echo "${{ secrets.RASPBERRY_PI_SECRET_KEY }}" > /home/runner/.ssh/github_actions
+          echo "${{ secrets.RASPBERRY_SECRET_KEY }}" > /home/runner/.ssh/github_actions
           chmod 600 /home/runner/.ssh/github_actions
 
           # Add the Raspberry Pi's host key to known_hosts
-          ssh-keyscan -p 2222 ${{ secrets.RASPI_HOST }} >> /home/runner/.ssh/known_hosts
+          ssh-keyscan -p 2222 ${{ secrets.RASPBERRY_HOST }} >> /home/runner/.ssh/known_hosts
 
           # Debugging: Show SSH directory contents
           ls -la /home/runner/.ssh
 
           # SSH into Raspberry Pi and execute commands
-          ssh -i /home/runner/.ssh/github_actions -p 2222 pi@${{ secrets.RASPI_HOST }} << EOF
+          ssh -i /home/runner/.ssh/github_actions -p 2222 pi@${{ secrets.RASPBERRY_HOST }} << EOF
             set -e
             cd /var/www/html/repos/portfolio_website
             git pull origin main
