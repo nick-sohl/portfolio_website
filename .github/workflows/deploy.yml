@@ -15,13 +15,11 @@ jobs:
 
       - name: Deploy to Raspberry Pi
         env:
-          PI_HOST: ${{ secrets.RASPI_HOST }}  # Raspberry Pi IP address as a secret
-          PI_USER: pi
           REPO_PATH: /var/www/html/repos/portfolio_website
           NGINX_PATH: /var/www/html/portfolio-website
         run: |
           # SSH into Raspberry Pi and execute the deployment commands
-          ssh $PI_USER@$PI_HOST << EOF
+          ssh my-raspberry << EOF
             cd $REPO_PATH
             git pull origin main
 
