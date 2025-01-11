@@ -17,7 +17,7 @@ jobs:
         run: |
           # Add the private SSH key to the SSH agent
           echo "${{ secrets.RASPBERRY_PI_SECRET_KEY }}" > ~/.ssh/github_actions
-          chmod 600 ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/github_actions
 
           # Add GitHub's SSH key to known hosts to avoid authenticity prompt
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
